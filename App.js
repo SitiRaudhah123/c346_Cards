@@ -30,7 +30,7 @@ const App = () => {
         if (text !== '') {
             const lower = text.toLowerCase();
             const myFilterData = originalData.filter((item) =>
-                item.album_name.toLowerCase().includes(lower)
+                item.cards_name.toLowerCase().includes(lower)
             );
             setMyData(myFilterData);
         } else {
