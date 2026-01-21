@@ -9,6 +9,7 @@ import {
     StyleSheet,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import Navigation from "./Navigation.js";
 
 let originalData = [];
 
@@ -35,6 +36,11 @@ const App = () => {
             setMyData(myFilterData);
         } else {
             setMyData(originalData);
+        }
+        {
+            return (
+                <Navigation/>
+            );
         }
     };
 
